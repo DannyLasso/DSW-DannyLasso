@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Danny J Lasso M">
+    <meta name="description" content="CSS, Estilos Internos, Estilos Externos, Conectores y Lenguaje HTML">
+    <meta name="keywords" content="CSS,CSS3,HTML,HTML5,Estilos Internos,Estilos Externos,Conectores ">
+    <title>Estilos Internos y Externos CSS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    
+<aside class="tweet">
+
+    <blockquote class="twitter-tweet"><p lang="es" dir="ltr"><a href="https://twitter.com/hashtag/Ag%C3%A9ndateConLaUNAD?src=hash&amp;ref_src=twsrc%5Etfw">#AgéndateConLaUNAD</a> 🗓<br>Faltan pocos días para el VII Encuentro Interzonal de Investigación y IV Encuentro Internacional de E-Research, cuyo objetivo es fomentar a la investigación, desarrollo tecnológico e innovación. <br><br>Inscríbete👉🏼 <a href="https://t.co/K8K1kHlh8R">https://t.co/K8K1kHlh8R</a> <a href="https://t.co/d9o2mqGlEN">pic.twitter.com/d9o2mqGlEN</a></p>&mdash; Universidad UNAD (@UniversidadUNAD) <a href="https://twitter.com/UniversidadUNAD/status/1328787132316594179?ref_src=twsrc%5Etfw">November 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    <blockquote class="twitter-tweet"><p lang="es" dir="ltr"><a href="https://twitter.com/hashtag/ComunicadoOficial?src=hash&amp;ref_src=twsrc%5Etfw">#ComunicadoOficial</a> Procuraduría revocó sanción impuesta al rector de la UNAD, Jaime Alberto Leal Afanador (<a href="https://twitter.com/JaimeLeal_?ref_src=twsrc%5Etfw">@JaimeLeal_</a> ) y lo absolvió de los cargos investigados.<br><br>Leer más👉🏼 <a href="https://t.co/RvfdJxOH3I">https://t.co/RvfdJxOH3I</a> <a href="https://t.co/cse66bpjtb">pic.twitter.com/cse66bpjtb</a></p>&mdash; Universidad UNAD (@UniversidadUNAD) <a href="https://twitter.com/UniversidadUNAD/status/1320010854277042176?ref_src=twsrc%5Etfw">October 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</aside>
+
+<section class="margen">
+
+<div class="logo">
+    <img src="imagenes/Logo_unad.png" alt="Logo_unad" style="width: 40%">
+</div>
+
+<h1 class="centrado">Conceptos2</h1>
+
+<div class="fondoemenu">
+<div class="emenu">
+    <a href="inicio.html" style="margin: 6%">Inicio</a>
+    <a href="conceptos.html" style="margin: 6%">Conceptos</a>
+</div>
+</div>
+
+<br>
+<h1 class="centrado">Estilos Internos CSS3</h1>
+<h3 class="parrafo">
+    Los estilos internos en CSS hacen referencia a la manera de invocar estos estilos, sus parámetros están encerrados en las etiquetas style - /style, dentro de un documento HTML y funciona como una hoja de estilo externa, excepto que vive dentro del documento HTML en cuestion, en lugar de en un archivo separado .css, y por lo tanto solo se puede aplicar al documento en el que está etiqueta esta invocada.
+    <br><br>
+    Tenga en cuenta que este elemento debe estar dentro del elemento -head- para la validación de HTML.
+    <h2>Ejemplo:</h2>
+    <img src="imagenes/einterno.png" alt="einterno" style="width: 30%">
+</h3>
+<br><br>
+<h1 class="centrado">Estilos Externos CSS3</h1>
+<h3 class="parrafo">
+    Aunque el CSS interno nos permite unificar en una declaración todos los estilos para un archivo html, seguimos teniendo el problema de tener que repetir la definición de estilos en la cabecera de cada uno de los archivos html de nuestro desarrollo web. Si el desarrollo tiene pocos archivos quizás sea menos problemático, pero cuando el desarrollo tiene cientos o miles de archivos sí se convierte en un verdadero problema, ya que cada vez que introdujéramos cambios habría que hacerlo en los cientos o miles de archivos de que constara el desarrollo.
+    <br><br>
+    Para solventar esta solución se ideó la declaración externa de CSS, basada en declarar los estilos CSS en un archivo independiente que debería ser creado con extensión .css que puede servir como referente para dotar de estilos a decenas, cientos o miles de archivos html, que únicamente deberán invocar el nombre de archivo utilizando una sintaxis específica. De este modo un cambio en los estilos habrá que hacerlo únicamente en el archivo de estilos correspondiente, lo cual supone una gran ventaja. Incluso un cambio completo de los estilos de una página web se puede conseguir simplemente sustituyendo el archivo correspondiente.
+    <br><br>
+    En este caso, todos los estilos CSS se incluyen en un archivo de tipo CSS que las páginas HTML enlazan mediante la etiqueta ´link´. 
+    <br>
+    Un archivo de tipo CSS no es más que un archivo simple de texto cuya extensión es .css Se pueden crear todos los archivos CSS que sean necesarios y cada página HTML puede enlazar tantos archivos CSS como necesite.
+</h3>
+<br>
+<h1 class="centrado">Selectores</h1>
+<h3 class="parrafo">
+    El selector CSS (Cascading Style Sheet) es el nexo de unión entre la hoja de estilos y los documentos a los que se aplique dicha hoja. Ya sean (x)HTML, XLM, SVG... y con independencia del medio en que se muestre (media type).
+    <br><br>
+    Del conocimiento y buen manejo que se haga del selector CSS dependerá la eficiencia de la hoja de estilos y en muchos casos el poder lograr lo deseado sin necesidad de recurrir a otros lenguajes.
+    <br><br>
+    El selector CSS es el identificador en la hoja de estilos del elemento o elementos del DOM a los que se aplicarán las declaraciones contenidas en la regla de la que forma parte dicho selector.
+    <br><br>
+    Como curiosidad, en algunas partes, al elemento del DOM al que aplica el selector CSS se le llama sujeto del selector.
+    <br><br>
+    El término selector CSS puede referirse por igual a cualquiera de los cuatro tipo de selectores CSS que existen clasificados por la composición de su nombre:
+<br>
+<h3><br>
+    Selectores Básicos
+<br><br>
+<ul>  
+<li>Selector de tipo</li>
+<br>
+Selecciona todos los elementos que coinciden con el nombre del elemento especificado.
+<br>
+Sintaxis: eltname
+<br>
+Ejemplo: input se aplicará a cualquier elemento input.
+<br><br>
+<li>Selector de clase</li>
+<br>
+Selecciona todos los elementos que tienen el atributo de class especificado.
+<br>
+Sintaxis: .classname
+<br>
+Ejemplo: .index seleccionará cualquier elemento que tenga la clase "index".
+<br><br>
+<li>Selector de ID</li>
+<br>
+Selecciona un elemento basándose en el valor de su atributo id. Solo puede haber un elemento con un determinado ID dentro de un documento.
+<br>
+Sintaxis: #idname
+<br>
+Ejemplo: #toc se aplicará a cualquier elemento que tenga el ID "toc".
+<br><br>
+<li>Selector universal</li>
+<br>
+Selecciona todos los elementos. Opcionalmente, puede estar restringido a un espacio de nombre específico o a todos los espacios de nombres.
+<br>
+Sintaxis: * ns|* *|*
+<br>
+Ejemplo: * se aplicará a todos los elementos del documento.
+<br><br>
+<li>Selector de atributo</li>
+<br>
+Selecciona elementos basándose en el valor de un determinado atributo.
+<br>
+Sintaxis: [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]
+<br>
+Ejemplo: [autoplay] seleccionará todos los elementos que tengan el atributo "autoplay" establecido (a cualquier valor).
+</ul>
+</h3>
+
+</section>
+
+<footer class="footerc1">
+    <br>
+    <h3>Estilos Internos y Externos CSS</h3>
+    <img src="imagenes/unnamed.png" alt="unnamed" style="width: 10%">
+</footer>
+
+</body>
